@@ -1,4 +1,4 @@
-package com.maureen.io.stream;
+package com.maureen.io.streamType;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
