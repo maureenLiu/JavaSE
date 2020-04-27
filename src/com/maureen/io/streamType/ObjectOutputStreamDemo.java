@@ -2,11 +2,10 @@ package com.maureen.io.streamType;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * ObjectInputStream反序列化先前使用ObjectOutputStream编写的原始数据和对象
+ * ObjectOutputStream：序列化原始数据类型和对象
  */
 public class ObjectOutputStreamDemo {
     public static void main(String[] args) {
