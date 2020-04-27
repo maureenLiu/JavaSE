@@ -3,6 +3,8 @@ package com.maureen.io.streamType;
 import java.io.Serializable;
 
 public class Person implements Serializable {
+    long serialVersionUID = 1L;
+
     private int id;
     private String name;
     private String pwd;
@@ -19,5 +21,14 @@ public class Person implements Serializable {
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                '}';
     }
 }
