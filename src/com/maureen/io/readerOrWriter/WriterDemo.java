@@ -29,6 +29,5 @@ public class WriterDemo {
                 e.printStackTrace();
             }
         }
-
     }
 }
