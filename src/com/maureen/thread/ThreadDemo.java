@@ -36,6 +36,7 @@ package com.maureen.thread;
  *        进入的方式：
  *              sleep方法
  *              等待io资源
+ *              join方法(代码中执行的逻辑)
  */
 public class ThreadDemo extends Thread{
     @Override
