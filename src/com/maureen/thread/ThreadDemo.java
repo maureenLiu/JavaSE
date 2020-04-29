@@ -37,6 +37,9 @@ package com.maureen.thread;
  *              sleep方法
  *              等待io资源
  *              join方法(代码中执行的逻辑)
+ *
+ *      注意：
+ *          在多线程的时候，可以实现唤醒和等待的过程，但是唤醒和等待操作的对应不是thread类，而是设置的共享对象或者共享变量
  */
 public class ThreadDemo extends Thread{
     @Override
