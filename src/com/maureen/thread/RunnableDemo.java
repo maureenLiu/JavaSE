@@ -14,7 +14,9 @@ package com.maureen.thread;
  *      3、创建Thread对象，将创建好的Runnable的子类实现作为Thread的构造参数
  *      4、通过Thread.start()进行启动
  *
- * 推荐使用第二种方式，java是单继承，将继承关系留给最需要的类
+ * 推荐使用第二种方式：
+ *      1、java是单继承，将继承关系留给最需要的类
+ *      2、不需要给共享变量添加static关键字，每次创建一个对象作为共享对象
  */
 
 public class RunnableDemo implements Runnable{
