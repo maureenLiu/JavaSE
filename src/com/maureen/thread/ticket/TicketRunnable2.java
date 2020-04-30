@@ -12,11 +12,17 @@ public class TicketRunnable2 implements Runnable {
     @Override
     public void run() {
         for(int i = 0; i < 100; i++) {
+            /**
+             * 将sleep操作放到同步操作的外面，可以使得线程轮流得到执行
+             */
             try {
-                Thread.sleep(200);//多个子线程可以轮流得到执行
+                Thread.sleep(200);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            /**
+             * 同步代码块解决线程安全问题
+             */
             synchronized(this) {
                 if (ticketCnt > 0) {
                     System.out.println(Thread.currentThread().getName() + "正在出售第" + (ticketCnt--) + "张票");
