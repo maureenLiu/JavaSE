@@ -1,19 +1,19 @@
-package com.maureen.thread;
+package com.maureen.thread.ticket;
 
 /**
  * 使用接口的方式，每次只创建了一个共享对象，所有的线程能够实现资源共享
  * 存在的问题：
- *  1、数据不一致的问题
- *      解决方法：线程同步
+ * 1、数据不一致的问题
+ * 解决方法：线程同步
  */
 public class TicketRunnable implements Runnable {
     private int ticketCnt = 5;
 
     @Override
     public void run() {
-        for(int i = 0; i < 100; i++) {
-            if(ticketCnt > 0) {
-                System.out.println(Thread.currentThread().getName() + "正在出售第" + (ticketCnt--)+"张票");
+        for (int i = 0; i < 100; i++) {
+            if (ticketCnt > 0) {
+                System.out.println(Thread.currentThread().getName() + "正在出售第" + (ticketCnt--) + "张票");
             }
         }
     }

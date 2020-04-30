@@ -1,4 +1,4 @@
-package com.maureen.thread;
+package com.maureen.thread.ticket;
 
 /**
  * 此时出现的问题：
