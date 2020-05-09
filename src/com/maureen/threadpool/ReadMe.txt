@@ -1,4 +1,4 @@
-线程池主要的三种：
+线程池的分类：
     ThreadPoolExecutor、ThreadPoolExecutor、ForkJoinPool。
 其中：
     1、ThreadPoolExecutor的实现：
