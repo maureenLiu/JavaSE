@@ -1,4 +1,4 @@
-package com.maureen.threadpool;
+package com.maureen.threadpool.threadpoolexecutor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

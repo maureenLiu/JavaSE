@@ -1,4 +1,4 @@
-package com.maureen.threadpool;
+package com.maureen.threadpool.threadpoolexecutor;
 
 public class Task implements Runnable{
     @Override
