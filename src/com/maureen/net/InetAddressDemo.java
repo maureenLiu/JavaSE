@@ -3,6 +3,9 @@ package com.maureen.net;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+/**
+ * 基于TCP协议的网络编程
+ */
 public class InetAddressDemo {
     public static void main(String[] args) {
         try {
@@ -17,6 +20,5 @@ public class InetAddressDemo {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
-
     }
 }
