@@ -1,10 +1,10 @@
-package com.maureen.annotation.metaannotation;
+package com.maureen.annotation;
 
 import java.lang.annotation.*;
 
 //@MyAnnotation(name="hehe",age=12, id = 3, likes={"book","tv"})
 @MyAnnotation
-public class MetaAnnotation {
+public class Annotation {
     public void test() {}
 }
 
