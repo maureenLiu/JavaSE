@@ -2,7 +2,7 @@ package com.maureen.annotation.metaannotation;
 
 import java.lang.annotation.*;
 
-@MyAnnotation
+@MyAnnotation(name="hehe",age=12, id = 3, likes={"book","tv"})
 public class MetaAnnotation {
     public void test() {}
 }
@@ -16,5 +16,9 @@ public class MetaAnnotation {
 //表示当前注解是否能够被继承
 @Inherited
 @interface MyAnnotation{
-
+    //定义的方式看起来像是方法，但实际上是使用注解的时候填写的参数名称，默认的名称是value
+    String name();
+    int age();
+    int id();
+    String[] likes();
 }
